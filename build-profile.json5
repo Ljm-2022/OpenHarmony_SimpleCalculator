@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/ljiam/.ohos/config/openharmony/default_SimpleCalculator_xdJLfCQqlJohDRsirECugc6RPSJr9ugmBS-F4Q4e4sE=.cer",
+          "storePassword": "0000001B957348FA479AC250C9D13766A22E4271AA87E8C76E2883782A7D001622532465EC6D0201306B94",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B4BEC345272FB878C26CEE3F868DF66CFF4AB733DD06E156643C5B8D1C8F86F914643D1A5984032",
+          "profile": "C:/Users/ljiam/.ohos/config/openharmony/default_SimpleCalculator_xdJLfCQqlJohDRsirECugc6RPSJr9ugmBS-F4Q4e4sE=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/ljiam/.ohos/config/openharmony/default_SimpleCalculator_xdJLfCQqlJohDRsirECugc6RPSJr9ugmBS-F4Q4e4sE=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "runtimeOS": "OpenHarmony"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
